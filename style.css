@@ -2,8 +2,27 @@ body {
     background-color: red;
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: "uni";
+    src: url("UniversLTStd.woff") format("woff");
+}
+
+@font-face {
+    font-family: "unibold";
+    src: url("UniversLTStd-Bold.woff") format("woff");
 }
 
 img {
     width: 100%;
+}
+
+div.width25 {
+    width: 25%;
+}
+
+h1 {
+    font-family: "unibold";
 }
