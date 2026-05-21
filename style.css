@@ -1,9 +1,30 @@
 body {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+<style>
+    h1 {
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-size: 100px;
+    }
+    h2 {
+        color:rgb(255, 255, 255)
+    }
+    h3 {
+        color:rgb(255, 255, 255)
+    }
+    body {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        }
+</style>
 
 @font-face {
     font-family: "uni";
@@ -19,10 +40,140 @@ img {
     width: 100%;
 }
 
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}   
+
 div.width25 {
     width: 25%;
 }
 
+div.width50 {
+    width: 50%;
+}
+
+div.width75 {
+    width: 75%;
+}
+
 h1 {
     font-family: "unibold";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+} 
+
+div.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+ 
+/SCROLLING MENU/
+body{
+    margin:0;
+    background:#000000;
+    overflow:hidden;
+    font-family:"uni";
+}
+body{
+    margin:0;
+    background:#000000;
+    overflow:hidden;
+    font-family:"uni";
+}
+.menu-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.menu-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMenu 50s linear infinite;
+}
+
+/* STOP ON HOVER */
+.menu-track:hover {
+  animation-play-state: paused;
+}
+
+.menu-set a {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-set a:hover {
+
+  transform:
+    scale(1.15)
+    translateY(-4px);
+
+  background: rgba(255,255,255,0.2);
+
+  box-shadow:
+    0 8px 25px rgba(255,255,255,0.2);
+
+}
+
+.menu-set {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.menu-set a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  white-space: nowrap;
+}
+
+@keyframes scrollMenu {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+} 
+.image-box{
+
+    width:350px;
+    height:220px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.image-box:hover{
+
+    transform:
+        scale(1.03)
+        translateY(-5px);
+
 }
