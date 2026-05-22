@@ -4,27 +4,30 @@ body {
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-<style>
-    h1 {
-        color:rgb(255, 255, 255);
-        text-align: center;
-        font-size: 100px;
-    }
-    h2 {
-        color:rgb(255, 255, 255)
-    }
-    h3 {
-        color:rgb(255, 255, 255)
-    }
-    body {
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-    }
-    a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        }
-</style>
+
+h1 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+}
+h2 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+h3 {
+    color:rgb(255, 255, 255);
+}
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 
 @font-face {
     font-family: "uni";
@@ -149,6 +152,7 @@ body{
     transform: translateX(-50%);
   }
 } 
+
 .image-box{
 
     width:350px;
@@ -175,5 +179,31 @@ body{
     transform:
         scale(1.03)
         translateY(-5px);
+
+} 
+ 
+.page-content{
+    margin-left: 100px;
+
+    margin-right: 100px;
+     
+    overflow-x: hidden;
+
+}  
+
+.image-container{
+
+    padding:30px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.4);
 
 }
